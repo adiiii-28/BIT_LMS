@@ -1,0 +1,16 @@
+# Moodle configuration / secrets
+config.php
+
+# Database dumps
+*.sql
+*.sql.gz
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs / temporary files
+*.log
+*.tmp
