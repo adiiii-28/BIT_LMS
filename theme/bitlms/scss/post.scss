@@ -1,0 +1,32 @@
+.navbar {
+    border-bottom: 4px solid $brand-secondary;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.navbar .navbar-brand {
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.btn-primary {
+    background-color: $brand-primary;
+    border-color: $brand-primary;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #193f61;
+    border-color: #193f61;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.block {
+    border-radius: 10px;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
