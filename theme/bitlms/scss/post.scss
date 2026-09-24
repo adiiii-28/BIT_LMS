@@ -12,8 +12,25 @@ body {
 
 .navbar .nav-link,
 .navbar .navbar-brand,
+.navbar .usermenu,
 .navbar .usermenu .login,
+.navbar .icon,
+.navbar .btn {
+    color: #ffffff !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .navbar-brand:hover {
+    color: #f4b400 !important;
+}
+
+/* Navbar icons */
 .navbar .icon {
+    color: #ffffff !important;
+}
+
+/* User menu */
+.navbar .usermenu .dropdown-toggle {
     color: #ffffff !important;
 }
 
