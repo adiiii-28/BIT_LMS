@@ -1,49 +1,49 @@
 # BIT LMS
 
-BIT LMS is a custom Learning Management System project for BIT Patna, built on top of Moodle.
+BIT LMS is a customized Learning Management System for **BIT Patna**, built on top of Moodle.
 
-## Project Goals
+## Features
 
-- Customize Moodle for college requirements
-- Develop custom themes, local plugins and blocks
-- Keep custom development organized and reviewable
-- Maintain a clean Git workflow for team collaboration
+- Customized BIT LMS theme and institutional branding
+- Online courses, quizzes and assessments
+- Programming assessments using Moodle CodeRunner
+- Automated coding evaluation
+- Custom academic and assessment reports
 
-## Repository Structure
+## Tech Stack
+
+- Moodle 5.2.3
+- PHP 8.4
+- MariaDB 11.8
+- Nginx + PHP-FPM
+- JavaScript, SCSS
+- Git & GitHub
+- WSL2 / Ubuntu 26.04
+
+## Development Architecture
 
 ```text
+Browser
+   ↓
+Nginx :8080
+   ↓
+PHP-FPM 8.4
+   ↓
+Moodle
+   ↓
+MariaDB
+Repository Structure
 bit-lms/
-├── .github/
-│   └── pull_request_template.md
 ├── blocks/
 ├── docs/
-│   ├── setup.md
-│   ├── development.md
-│   └── architecture.md
 ├── local/
+├── scripts/
 ├── theme/
+├── .github/
 ├── .gitignore
 └── README.md
-Development Environment
-The local development environment uses:
-WSL2
-Ubuntu 26.04 LTS
-Apache
-PHP 8.4
-MariaDB 11.8
-Moodle 5.2.x
-Git Workflow
-main contains reviewed and stable work.
-New development should use feature/* branches.
-Changes should be submitted through Pull Requests.
-Moodle core should not be committed to this repository.
-Custom work belongs in local/, theme/, and blocks/.
-Important
-Do not commit:
-config.php
-Database dumps
-Passwords or API keys
-Local environment files
-Moodle runtime/data directories
+Development
+Moodle core and production data are maintained separately.
+This repository contains custom BIT LMS themes, plugins, scripts and documentation.
 License
-This project is intended for academic and institutional development at BIT Patna.
+Academic and institutional development project for BIT Patna.
