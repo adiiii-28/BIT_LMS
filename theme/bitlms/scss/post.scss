@@ -1,32 +1,81 @@
+/* BIT LMS - Main branding */
+
+body {
+    background-color: var(--bit-bg);
+    color: var(--bit-text);
+}
+
+/* Top navigation */
 .navbar {
-    border-bottom: 4px solid $brand-secondary;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    background: var(--bit-primary) !important;
 }
 
-.navbar .navbar-brand {
-    font-weight: 700;
-    letter-spacing: 0.3px;
+.navbar .nav-link,
+.navbar .navbar-brand,
+.navbar .usermenu,
+.navbar .usermenu .login,
+.navbar .icon,
+.navbar .btn {
+    color: #ffffff !important;
 }
 
+.navbar .nav-link:hover,
+.navbar .navbar-brand:hover {
+    color: #f4b400 !important;
+}
+
+/* Navbar icons */
+.navbar .icon {
+    color: #ffffff !important;
+}
+
+/* User menu */
+.navbar .usermenu .dropdown-toggle {
+    color: #ffffff !important;
+}
+
+/* Primary buttons */
 .btn-primary {
-    background-color: $brand-primary;
-    border-color: $brand-primary;
+    background-color: var(--bit-primary);
+    border-color: var(--bit-primary);
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-    background-color: #193f61;
-    border-color: #193f61;
+    background-color: var(--bit-primary-dark);
+    border-color: var(--bit-primary-dark);
 }
 
-.card {
-    border-radius: 10px;
-}
-
+/* Dashboard cards */
+.card,
 .block {
-    border-radius: 10px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
 }
 
-h1, h2, h3 {
+/* Course cards */
+.dashboard-card {
+    border-radius: 14px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Page headings */
+#page-header h1,
+.page-header-headings h1 {
     font-weight: 700;
+}
+
+/* Links */
+a {
+    color: var(--bit-primary);
+}
+
+a:hover {
+    color: var(--bit-primary-dark);
 }
